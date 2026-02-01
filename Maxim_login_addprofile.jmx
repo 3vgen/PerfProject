@@ -664,7 +664,7 @@
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="login" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/auth-srv/login-45" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/auth-srv/login-45">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -687,7 +687,7 @@
               <elementProp name="password" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.name">password</stringProp>
-                <stringProp name="Argument.value">Wsx321!@#</stringProp>
+                <stringProp name="Argument.value">Admin123:)</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
               </elementProp>
@@ -762,7 +762,7 @@
           </BoundaryExtractor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/auth-srv/user-47" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/auth-srv/user-47">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1002,7 +1002,7 @@
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/auth-srv/identityProvider-50" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/auth-srv/identityProvider-50">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1130,7 +1130,7 @@
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/auth-srv/teamMember/teamContext-52" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/auth-srv/teamMember/teamContext-52">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1361,7 +1361,7 @@
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Edit Groups" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_04_edit_groups/auth-srv/team/21-55" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_04_edit_groups/auth-srv/team/21-55">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1587,6 +1587,26 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
+          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="userid">
+            <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
+            <stringProp name="BoundaryExtractor.refname">userid</stringProp>
+            <stringProp name="BoundaryExtractor.lboundary">&quot;userId&quot;:</stringProp>
+            <stringProp name="BoundaryExtractor.rboundary">,&quot;email&quot;</stringProp>
+            <stringProp name="BoundaryExtractor.default"></stringProp>
+            <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
+            <stringProp name="BoundaryExtractor.match_number"></stringProp>
+          </BoundaryExtractor>
+          <hashTree/>
+          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="id">
+            <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
+            <stringProp name="BoundaryExtractor.refname">id</stringProp>
+            <stringProp name="BoundaryExtractor.lboundary">&quot;id&quot;:</stringProp>
+            <stringProp name="BoundaryExtractor.rboundary">,&quot;teamId&quot;</stringProp>
+            <stringProp name="BoundaryExtractor.default"></stringProp>
+            <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
+            <stringProp name="BoundaryExtractor.match_number"></stringProp>
+          </BoundaryExtractor>
+          <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_05_add_profile/auth-srv/teamMember-58">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
@@ -1668,26 +1688,6 @@
               </elementProp>
             </collectionProp>
           </HeaderManager>
-          <hashTree/>
-          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="userid">
-            <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
-            <stringProp name="BoundaryExtractor.refname">userid</stringProp>
-            <stringProp name="BoundaryExtractor.lboundary">&quot;userId&quot;:</stringProp>
-            <stringProp name="BoundaryExtractor.rboundary">,&quot;email&quot;</stringProp>
-            <stringProp name="BoundaryExtractor.default"></stringProp>
-            <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
-            <stringProp name="BoundaryExtractor.match_number"></stringProp>
-          </BoundaryExtractor>
-          <hashTree/>
-          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="id">
-            <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
-            <stringProp name="BoundaryExtractor.refname">id</stringProp>
-            <stringProp name="BoundaryExtractor.lboundary">&quot;id&quot;:</stringProp>
-            <stringProp name="BoundaryExtractor.rboundary">,&quot;teamId&quot;</stringProp>
-            <stringProp name="BoundaryExtractor.default"></stringProp>
-            <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
-            <stringProp name="BoundaryExtractor.match_number"></stringProp>
-          </BoundaryExtractor>
           <hashTree/>
         </hashTree>
       </hashTree>
@@ -2615,7 +2615,7 @@ if (cookieManager != null) {
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2647,7 +2647,7 @@ if (cookieManager != null) {
               </elementProp>
               <elementProp name="Authorization" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc19ub3RpZmljYXRlZCI6ZmFsc2UsInVzZXJfaWQiOjE5NTcsInVzZXJfbmFtZSI6ImFzZGFzZEBtYWlsLmNvbSIsInNjb3BlIjpbInRydXN0IiwicmVhZCIsIndyaXRlIl0sInRlYW1fbWVtYmVyIjoie1wiaWRcIjoyMDk0LFwidGVhbUlkXCI6MjEsXCJ1c2VySWRcIjoxOTU3LFwiZW1haWxcIjpcImFzZGFzZEBtYWlsLmNvbVwiLFwidXNlckRpc3BsYXlOYW1lXCI6XCJhc2Rhc2RcIixcInBlcm1pc3Npb25MaXN0XCI6W1wiVklFV1wiLFwiRURJVFwiLFwiUlVOXCJdLFwiaW52aXRhdGlvblN0YXR1c1wiOlwiQUNDRVBURURcIixcImludml0ZVVybFwiOm51bGwsXCJleHBpcmVkQXRcIjpudWxsLFwiY3JlYXRlQXRcIjpcIjIwMjYtMDEtMzBUMTE6NTM6MzMuNjQ1WlwiLFwidXBkYXRlZEF0XCI6XCIyMDI2LTAxLTMwVDExOjUzOjU3LjgzOFpcIn0iLCJ1c2VyX2xhbmd1YWdlIjoiRU4iLCJ0ZWFtX2lkIjoyMSwiZXhwIjoxNzY5ODE3Mjc2LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiNTUzZjIzOWQtYTY0Yy00N2EwLWI0Y2YtMjMxNGUwYmEzZWU1IiwiY2xpZW50X2lkIjoiY2xpZW50In0.Z2u34mymrXXY2H0lY4SZs5_bpTNv72Dwo3kVR4Csvc7VF9ZTM2zZosUHGy4E1UxttKY8a1rSQ1VtY9kuoLtYTGhYtYe9vaq4LpxKOQ5YbHV9vLOub5rc30V8tp4iOYlzWBhSaSmSzsbE6B4xU4NqTlR0K5gvex1g2-CtyuHokGYHpgjAb6QkqN9JkHRdeHlWV1BFR2QikvjFCQoj3mAKZcR7uFuKOlE0x6BxRUqKe3SF0qD2OHHxo9EyEInLZE50gdKrBSqWYq6s1GiM7vMA8Glc_VFB8iPWsRlhVYPGLkIDozSt3EhCjx64menyUnQHPhjN8kgAEinftPr2CHMkaw</stringProp>
+                <stringProp name="Header.value">Bearer ${Token_Team}</stringProp>
               </elementProp>
               <elementProp name="Sec-GPC" elementType="Header">
                 <stringProp name="Header.name">Sec-GPC</stringProp>
