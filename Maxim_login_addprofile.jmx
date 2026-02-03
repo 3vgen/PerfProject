@@ -5,8 +5,6 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
@@ -666,7 +664,7 @@
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="login" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/auth-srv/login-45">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/auth-srv/login-45" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2979,7 +2977,7 @@ if (cookieManager != null) {
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3065,7 +3063,7 @@ if (cookieManager != null) {
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3112,7 +3110,7 @@ if (cookieManager != null) {
           <hashTree/>
         </hashTree>
       </hashTree>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Save_Test" enabled="false"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Save Test" enabled="false"/>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_02_TR_04_Save_All/testplan-srv/testInfo?testMode=TEST-27">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
@@ -3134,7 +3132,7 @@ if (cookieManager != null) {
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3205,14 +3203,14 @@ if (cookieManager != null) {
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;comment&quot;:&quot;&quot;,&quot;contentFormat&quot;:&quot;yaml&quot;,&quot;contentModelVersion&quot;:&quot;2.0.0&quot;,&quot;labelSet&quot;:[],&quot;requestCount&quot;:1,&quot;testType&quot;:&quot;STABLE&quot;,&quot;projectName&quot;:&quot;test ${current_date}&quot;,&quot;contentV2&quot;:{&quot;boomqTestPlan&quot;:{&quot;threadGroups&quot;:[{&quot;boomqConfiguration&quot;:{&quot;resourceConfiguration&quot;:{&quot;testRunnerIds&quot;:[2]},&quot;loadProfilePercent&quot;:100},&quot;enabled&quot;:true,&quot;id&quot;:&quot;153256da-5557-4aaa-bfd9-1e3a0663d598&quot;,&quot;label&quot;:&quot;New group 1&quot;,&quot;steps&quot;:[],&quot;type&quot;:&quot;BOOMQ_STABLE_SCALABILITY&quot;,&quot;typeDisplayName&quot;:&quot;&quot;,&quot;threadGroupElements&quot;:[{&quot;children&quot;:[{&quot;children&quot;:&quot;&quot;,&quot;individualProperties&quot;:{&quot;useKeepAlive&quot;:true,&quot;type&quot;:&quot;HTTP&quot;,&quot;retrieveAllEmbeddedResources&quot;:true,&quot;followRedirects&quot;:true,&quot;automaticallyRedirect&quot;:false,&quot;method&quot;:&quot;POST&quot;,&quot;browserCompatibleHeaders&quot;:false,&quot;doMultipartPost&quot;:false,&quot;path&quot;:&quot;/info/postBalances&quot;,&quot;port&quot;:&quot;42082&quot;,&quot;protocol&quot;:&quot;http&quot;,&quot;search&quot;:&quot;?&quot;,&quot;serverName&quot;:&quot;82.142.167.46&quot;,&quot;headers&quot;:{},&quot;queryParameters&quot;:[],&quot;body&quot;:&quot;{\n \&quot;rqUID\&quot;: \&quot;58dgtf565j8547f64ke7\&quot;,\n \&quot;clientId\&quot;: \&quot;8050000000000000000\&quot;,\n \&quot;account\&quot;: \&quot;30500000000000000001\&quot;,\n \&quot;openDate\&quot;: \&quot;2020-01-01\&quot;,\n \&quot;closeDate\&quot;: \&quot;2025-01-01\&quot;\n }&quot;,&quot;bodyParameters&quot;:[]},&quot;timerList&quot;:[],&quot;label&quot;:&quot;http://82.142.167.46:42082/info/postBalances&quot;,&quot;id&quot;:&quot;d930e17d-fa00-433e-83e7-a036b9ddc96e&quot;,&quot;type&quot;:&quot;SAMPLER&quot;,&quot;enabled&quot;:true,&quot;assertions&quot;:[],&quot;extractors&quot;:[],&quot;typeDisplayName&quot;:&quot;HTTP Request&quot;}],&quot;individualProperties&quot;:{&quot;includeDurationOfAllElementsToGeneratedSampler&quot;:false,&quot;generateParentSampler&quot;:false,&quot;type&quot;:&quot;TRANSACTION&quot;},&quot;timerList&quot;:[],&quot;label&quot;:&quot;Transaction 1&quot;,&quot;id&quot;:&quot;02cb4de3-bd39-4eef-abe4-3ade3ca5c244&quot;,&quot;type&quot;:&quot;CONTROLLER&quot;,&quot;enabled&quot;:true,&quot;creationIndex&quot;:1,&quot;typeDisplayName&quot;:&quot;Transaction Controller&quot;}]}],&quot;runThreadGroupConsecutively&quot;:false,&quot;loadProfileType&quot;:&quot;PER_TEST&quot;,&quot;functionalMode&quot;:false,&quot;runTearDownAfterShutdown&quot;:true,&quot;configurationElements&quot;:[{&quot;clearControlledByThreadGroup&quot;:false,&quot;cookiePolicy&quot;:&quot;STANDARD&quot;,&quot;clearEachIteration&quot;:false,&quot;userDefinedCookies&quot;:[],&quot;label&quot;:&quot;Http cookie manager&quot;,&quot;id&quot;:&quot;915b23c4-b97a-43a1-a79b-a388ede0c7f7&quot;,&quot;type&quot;:&quot;HTTP_COOKIE_MANAGER&quot;,&quot;enabled&quot;:true},{&quot;headers&quot;:{&quot;User-Agent&quot;:&quot;Mozilla/5.0&quot;},&quot;label&quot;:&quot;Http header manager&quot;,&quot;id&quot;:&quot;a15d4429-5b50-40d4-ab7c-f6dd2adccb5a&quot;,&quot;type&quot;:&quot;HTTP_HEADER_MANAGER&quot;,&quot;enabled&quot;:true},{&quot;label&quot;:&quot;Http request defaults&quot;,&quot;type&quot;:&quot;HTTP_REQUEST_DEFAULTS&quot;,&quot;enabled&quot;:true,&quot;id&quot;:&quot;d5ed4138-1f75-41d6-85fa-98714ff53aa4&quot;,&quot;connectTimeout&quot;:60000,&quot;responseTimeout&quot;:120000}],&quot;loadProfile&quot;:{&quot;usersPerStep&quot;:1,&quot;rampDownMs&quot;:0,&quot;durationAddedOnLastStepMs&quot;:0,&quot;boomqProfileType&quot;:&quot;STABLE&quot;,&quot;rampUpMs&quot;:60000,&quot;stepLengthMs&quot;:60000,&quot;stepCount&quot;:1},&quot;timers&quot;:[{&quot;timerType&quot;:&quot;CONSTANT&quot;,&quot;label&quot;:&quot;boomq_timer_f56efc05-cb64-40f1-8983-50ad20229fd4&quot;,&quot;id&quot;:&quot;f56efc05-cb64-40f1-8983-50ad20229fd4&quot;,&quot;durationMs&quot;:8000,&quot;enabled&quot;:true}]},&quot;slaGroupList&quot;:[{&quot;type&quot;:&quot;GENERAL_TEST_SLA&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;slaList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;operation&quot;:&quot;LESS_EQUALS&quot;,&quot;status&quot;:&quot;NOT_COUNTED&quot;,&quot;toDate&quot;:120,&quot;value&quot;:0}]}],&quot;supportingFiles&quot;:[],&quot;supportingFilesV2&quot;:[]},&quot;totalDuration&quot;:120}</stringProp>
+                <stringProp name="Argument.value">{&quot;comment&quot;:&quot;&quot;,&quot;contentFormat&quot;:&quot;yaml&quot;,&quot;contentModelVersion&quot;:&quot;2.0.0&quot;,&quot;labelSet&quot;:[],&quot;requestCount&quot;:1,&quot;testType&quot;:&quot;STABLE&quot;,&quot;projectName&quot;:&quot;test ${current_date}&quot;,&quot;contentV2&quot;:{&quot;boomqTestPlan&quot;:{&quot;threadGroups&quot;:[{&quot;boomqConfiguration&quot;:{&quot;resourceConfiguration&quot;:{&quot;testRunnerIds&quot;:[2]},&quot;loadProfilePercent&quot;:100},&quot;enabled&quot;:true,&quot;id&quot;:&quot;153256da-5557-4aaa-bfd9-1e3a0663d598&quot;,&quot;label&quot;:&quot;New group 1&quot;,&quot;steps&quot;:[],&quot;type&quot;:&quot;BOOMQ_STABLE_SCALABILITY&quot;,&quot;typeDisplayName&quot;:&quot;&quot;,&quot;threadGroupElements&quot;:[{&quot;children&quot;:[{&quot;children&quot;:&quot;&quot;,&quot;individualProperties&quot;:{&quot;useKeepAlive&quot;:true,&quot;type&quot;:&quot;HTTP&quot;,&quot;retrieveAllEmbeddedResources&quot;:true,&quot;followRedirects&quot;:true,&quot;automaticallyRedirect&quot;:false,&quot;method&quot;:&quot;POST&quot;,&quot;browserCompatibleHeaders&quot;:false,&quot;doMultipartPost&quot;:false,&quot;path&quot;:&quot;/info/postBalances&quot;,&quot;port&quot;:&quot;42082&quot;,&quot;protocol&quot;:&quot;http&quot;,&quot;search&quot;:&quot;?&quot;,&quot;serverName&quot;:&quot;82.142.167.46&quot;,&quot;headers&quot;:{},&quot;queryParameters&quot;:[],&quot;body&quot;:&quot;{\n \&quot;rqUID\&quot;: \&quot;58dgtf565j8547f64ke7\&quot;,\n \&quot;clientId\&quot;: \&quot;8050000000000000000\&quot;,\n \&quot;account\&quot;: \&quot;30500000000000000001\&quot;,\n \&quot;openDate\&quot;: \&quot;2020-01-01\&quot;,\n \&quot;closeDate\&quot;: \&quot;2025-01-01\&quot;\n }&quot;,&quot;bodyParameters&quot;:[]},&quot;timerList&quot;:[],&quot;label&quot;:&quot;http://82.142.167.46:42082/info/postBalances&quot;,&quot;id&quot;:&quot;d930e17d-fa00-433e-83e7-a036b9ddc96e&quot;,&quot;type&quot;:&quot;SAMPLER&quot;,&quot;enabled&quot;:true,&quot;assertions&quot;:[],&quot;extractors&quot;:[],&quot;typeDisplayName&quot;:&quot;HTTP Request&quot;}],&quot;individualProperties&quot;:{&quot;includeDurationOfAllElementsToGeneratedSampler&quot;:false,&quot;generateParentSampler&quot;:false,&quot;type&quot;:&quot;TRANSACTION&quot;},&quot;timerList&quot;:[],&quot;label&quot;:&quot;Transaction 1&quot;,&quot;id&quot;:&quot;02cb4de3-bd39-4eef-abe4-3ade3ca5c244&quot;,&quot;type&quot;:&quot;CONTROLLER&quot;,&quot;enabled&quot;:true,&quot;creationIndex&quot;:1,&quot;typeDisplayName&quot;:&quot;Transaction Controller&quot;}]}],&quot;runThreadGroupConsecutively&quot;:false,&quot;loadProfileType&quot;:&quot;PER_TEST&quot;,&quot;functionalMode&quot;:false,&quot;runTearDownAfterShutdown&quot;:true,&quot;configurationElements&quot;:[{&quot;clearControlledByThreadGroup&quot;:false,&quot;cookiePolicy&quot;:&quot;STANDARD&quot;,&quot;clearEachIteration&quot;:false,&quot;userDefinedCookies&quot;:[],&quot;label&quot;:&quot;Http cookie manager&quot;,&quot;id&quot;:&quot;915b23c4-b97a-43a1-a79b-a388ede0c7f7&quot;,&quot;type&quot;:&quot;HTTP_COOKIE_MANAGER&quot;,&quot;enabled&quot;:true},{&quot;headers&quot;:{&quot;User-Agent&quot;:&quot;Mozilla/5.0&quot;},&quot;label&quot;:&quot;Http header manager&quot;,&quot;id&quot;:&quot;a15d4429-5b50-40d4-ab7c-f6dd2adccb5a&quot;,&quot;type&quot;:&quot;HTTP_HEADER_MANAGER&quot;,&quot;enabled&quot;:true},{&quot;label&quot;:&quot;Http request defaults&quot;,&quot;type&quot;:&quot;HTTP_REQUEST_DEFAULTS&quot;,&quot;enabled&quot;:true,&quot;id&quot;:&quot;d5ed4138-1f75-41d6-85fa-98714ff53aa4&quot;,&quot;connectTimeout&quot;:60000,&quot;responseTimeout&quot;:120000}],&quot;loadProfile&quot;:{&quot;usersPerStep&quot;:${USERS},&quot;rampDownMs&quot;:0,&quot;durationAddedOnLastStepMs&quot;:0,&quot;boomqProfileType&quot;:&quot;STABLE&quot;,&quot;rampUpMs&quot;:60000,&quot;stepLengthMs&quot;:${STEP_LENGTH_MS},&quot;stepCount&quot;:1},&quot;timers&quot;:[{&quot;timerType&quot;:&quot;CONSTANT&quot;,&quot;label&quot;:&quot;boomq_timer_f56efc05-cb64-40f1-8983-50ad20229fd4&quot;,&quot;id&quot;:&quot;f56efc05-cb64-40f1-8983-50ad20229fd4&quot;,&quot;durationMs&quot;:8000,&quot;enabled&quot;:true}]},&quot;slaGroupList&quot;:[{&quot;type&quot;:&quot;GENERAL_TEST_SLA&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;slaList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;operation&quot;:&quot;LESS_EQUALS&quot;,&quot;status&quot;:&quot;NOT_COUNTED&quot;,&quot;toDate&quot;:120,&quot;value&quot;:0}]}],&quot;supportingFiles&quot;:[],&quot;supportingFilesV2&quot;:[]},&quot;totalDuration&quot;:120}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor Дата и Время">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -3231,7 +3229,18 @@ log.info(&quot;Current date: &quot; + currentDate)
 vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor Пользователи и Длительность">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import java.util.concurrent.ThreadLocalRandom
+
+vars.put(&quot;USERS&quot;, ThreadLocalRandom.current().nextInt(1, 4).toString())
+vars.put(&quot;STEP_LENGTH_MS&quot;, (ThreadLocalRandom.current().nextInt(1, 4) * 60000).toString())</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3285,7 +3294,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_02_TR_04_Save_All/static/media/check.9725c0396328bae9471b624111fc14ca.svg-29">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_02_TR_04_Save_All/static/media/check.9725c0396328bae9471b624111fc14ca.svg-29" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3299,7 +3308,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3346,7 +3355,1024 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="true">
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Start" enabled="false"/>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_01_home/-61">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">navigate</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">none</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-User" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-User</stringProp>
+                <stringProp name="Header.value">?1</stringProp>
+              </elementProp>
+              <elementProp name="Priority" elementType="Header">
+                <stringProp name="Header.name">Priority</stringProp>
+                <stringProp name="Header.value">u=0, i</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">document</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_01_home/static/css/main.64a4c65b.css-63">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/static/css/main.64a4c65b.css</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">no-cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Priority" elementType="Header">
+                <stringProp name="Header.name">Priority</stringProp>
+                <stringProp name="Header.value">u=2</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/css,*/*;q=0.1</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">style</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_01_home/static/js/main.cddf1824.js-62">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/static/js/main.cddf1824.js</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">no-cors</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">script</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_01_home/favicon.png-64">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/favicon.png</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">no-cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Priority" elementType="Header">
+                <stringProp name="Header.name">Priority</stringProp>
+                <stringProp name="Header.value">u=6</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">image</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_01_home/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff-65" enabled="true">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/static/css/main.64a4c65b.css</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">identity</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">font</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_01_home/static/media/loading.b59fa25397e07d75b9ac55ace151e625.svg-66" enabled="true">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/static/media/loading.b59fa25397e07d75b9ac55ace151e625.svg</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">no-cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/authorize</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Priority" elementType="Header">
+                <stringProp name="Header.name">Priority</stringProp>
+                <stringProp name="Header.value">u=5, i</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">image</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_01_home/static/media/logo.f5ae2890e77693e018920d4ad41c643c.svg-68" enabled="true">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/static/media/logo.f5ae2890e77693e018920d4ad41c643c.svg</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">no-cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/authorize</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Priority" elementType="Header">
+                <stringProp name="Header.name">Priority</stringProp>
+                <stringProp name="Header.value">u=5, i</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">image</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_01_home/static/media/Montserrat-SemiBold.197213592de7a2a62e06.woff-67" enabled="true">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/static/media/Montserrat-SemiBold.197213592de7a2a62e06.woff</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/static/css/main.64a4c65b.css</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">identity</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">font</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_01_home/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff-69" enabled="true">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/static/css/main.64a4c65b.css</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">identity</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">font</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_01_home/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff-70" enabled="true">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/static/css/main.64a4c65b.css</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">identity</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">font</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/project-srv/project/2708-37">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/project-srv/project/2708</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/account/tests/2708</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Priority" elementType="Header">
+                <stringProp name="Header.name">Priority</stringProp>
+                <stringProp name="Header.value">u=0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${Token_Team}</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">empty</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/project-srv/project/2708/version/3942-38">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/project-srv/project/2708/version/3942</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/account/tests/2708</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${Token_Team}</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">empty</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/project-srv/project/2708/version/3942/downloadLink-39" enabled="true">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/project-srv/project/2708/version/3942/downloadLink</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/account/tests/2708</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${Token_Team}</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">empty</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/minio/boomq/boomq/teams/21/projects/2708/v_3942.yaml-40" enabled="true">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/minio/boomq/boomq/teams/21/projects/2708/v_3942.yaml</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="X-Amz-Algorithm" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">X-Amz-Algorithm</stringProp>
+                <stringProp name="Argument.value">AWS4-HMAC-SHA256</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="X-Amz-Credential" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">X-Amz-Credential</stringProp>
+                <stringProp name="Argument.value">AKIAIOSFODNN7EXAMPLE/20260203/us-east-1/s3/aws4_request</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="X-Amz-Date" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">X-Amz-Date</stringProp>
+                <stringProp name="Argument.value">20260203T100543Z</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="X-Amz-Expires" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">X-Amz-Expires</stringProp>
+                <stringProp name="Argument.value">604800</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="X-Amz-SignedHeaders" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">X-Amz-SignedHeaders</stringProp>
+                <stringProp name="Argument.value">host</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="X-Amz-Signature" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">X-Amz-Signature</stringProp>
+                <stringProp name="Argument.value">dcb8f9eef3b3d03f6851c24e58ad4228bce16472316bbfd085eb85c9721f94e2</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/account/tests/2708</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">empty</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/test-srv/test-41" enabled="true">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/test-srv/test</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;comment&quot;:&quot;&quot;,&quot;labelSet&quot;:[],&quot;projectId&quot;:&quot;2708&quot;,&quot;projectVersionId&quot;:3942,&quot;testMode&quot;:&quot;TEST&quot;,&quot;testProjectId&quot;:&quot;2708&quot;,&quot;testProjectVersionId&quot;:3942}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/account/tests/2708</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru</stringProp>
+              </elementProp>
+              <elementProp name="Priority" elementType="Header">
+                <stringProp name="Header.name">Priority</stringProp>
+                <stringProp name="Header.value">u=0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${Token_Team}</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">empty</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/project-srv/project-43">
+          <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
+          <stringProp name="HTTPSampler.port">443</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/project-srv/project</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="sort" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">sort</stringProp>
+                <stringProp name="Argument.value">lastModified,desc</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="size" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">size</stringProp>
+                <stringProp name="Argument.value">999</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://dev-boomq.pflb.ru/account/test-runs</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Site" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${Token_Team}</stringProp>
+              </elementProp>
+              <elementProp name="Sec-GPC" elementType="Header">
+                <stringProp name="Header.name">Sec-GPC</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br, zstd</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0</stringProp>
+              </elementProp>
+              <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                <stringProp name="Header.value">empty</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder">
         <stringProp name="ProxyControlGui.port">8889</stringProp>
         <collectionProp name="ProxyControlGui.exclude_list"/>
         <collectionProp name="ProxyControlGui.include_list">
@@ -3363,7 +4389,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         <boolProp name="ProxyControlGui.sampler_download_images">false</boolProp>
         <intProp name="ProxyControlGui.proxy_http_sampler_naming_mode">0</intProp>
         <stringProp name="ProxyControlGui.default_encoding"></stringProp>
-        <stringProp name="ProxyControlGui.proxy_prefix_http_sampler_name">UC_02_TR_08_Save_All</stringProp>
+        <stringProp name="ProxyControlGui.proxy_prefix_http_sampler_name">UC_03_TR_01_Test_Start</stringProp>
         <stringProp name="ProxyControlGui.proxy_pause_http_sampler"></stringProp>
         <boolProp name="ProxyControlGui.notify_child_sl_filtered">false</boolProp>
         <boolProp name="ProxyControlGui.regex_match">false</boolProp>
@@ -3382,7 +4408,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -3390,7 +4416,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -3398,7 +4424,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Groups" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Groups">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -3406,7 +4432,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Edit Group" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Edit Group">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -3414,7 +4440,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Add Profile" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Add Profile">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -3422,7 +4448,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="copy adress" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="copy adress">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -3430,7 +4456,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="open adress" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="open adress">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -3438,7 +4464,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="change pass" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="change pass">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -3453,7 +4479,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="UC_02_Test_Create">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="UC_02_Test_Create" enabled="false">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -3464,7 +4490,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -3472,7 +4498,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -3480,7 +4506,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="tests" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="tests">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -3488,11 +4514,11 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Save_Test" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Save_Test">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="-2107820524">Save_Test</stringProp>
+            <stringProp name="2128964949">Save Test</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
@@ -3501,6 +4527,50 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
           <boolProp name="displaySystemProperties">false</boolProp>
         </DebugSampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="UC_03_Test_Start">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="2255103">Home</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="103149417">login</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="tests">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="110251553">tests</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Test Start">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-2064264364">Test Start</stringProp>
+          </collectionProp>
+        </ModuleController>
         <hashTree/>
       </hashTree>
     </hashTree>
