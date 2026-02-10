@@ -5,6 +5,8 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
@@ -23,7 +25,7 @@
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments">
           <elementProp name="images_path" elementType="Argument">
             <stringProp name="Argument.name">images_path</stringProp>
@@ -302,7 +304,7 @@
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/config.json-46">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/config.json-46" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -316,7 +318,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -362,7 +364,7 @@
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/project-srv/modelSchema-48">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/project-srv/modelSchema-48" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -376,7 +378,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -628,7 +630,7 @@
           </BoundaryExtractor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/test-runner-srv/testRunner-53">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/test-runner-srv/testRunner-53" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1347,7 +1349,7 @@
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Edit Groups" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_04_edit_groups/auth-srv/team/21-55">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_04_edit_groups/auth-srv/team/21-55" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1496,7 +1498,7 @@
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Add Profile" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_05_add_profile/auth-srv/teamMember?teamId=21-57">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_05_add_profile/auth-srv/teamMember?teamId=21-57" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1516,7 +1518,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -1573,7 +1575,7 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="userid">
+          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="userid" enabled="true">
             <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
             <stringProp name="BoundaryExtractor.refname">userid</stringProp>
             <stringProp name="BoundaryExtractor.lboundary">&quot;userId&quot;:</stringProp>
@@ -1593,7 +1595,7 @@
             <stringProp name="BoundaryExtractor.match_number"></stringProp>
           </BoundaryExtractor>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor newUser + lock">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor newUser + lock" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -1668,7 +1670,7 @@ try {
           </JSR223PreProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_05_add_profile/auth-srv/teamMember-58">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_05_add_profile/auth-srv/teamMember-58" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2590,29 +2592,61 @@ if (cookieManager != null) {
           <hashTree/>
           <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Project ID">
             <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
-            <stringProp name="BoundaryExtractor.refname">projectId</stringProp>
+            <stringProp name="BoundaryExtractor.refname">projectIds</stringProp>
             <stringProp name="BoundaryExtractor.lboundary">&quot;projectId&quot;:</stringProp>
             <stringProp name="BoundaryExtractor.rboundary">,</stringProp>
             <stringProp name="BoundaryExtractor.default"></stringProp>
             <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
-            <stringProp name="BoundaryExtractor.match_number">1</stringProp>
+            <stringProp name="BoundaryExtractor.match_number">-1</stringProp>
           </BoundaryExtractor>
           <hashTree/>
           <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Version Id">
             <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
-            <stringProp name="BoundaryExtractor.refname">versionId</stringProp>
+            <stringProp name="BoundaryExtractor.refname">versionIds</stringProp>
             <stringProp name="BoundaryExtractor.lboundary">&quot;version&quot;:[{&quot;id&quot;:</stringProp>
             <stringProp name="BoundaryExtractor.rboundary">,</stringProp>
             <stringProp name="BoundaryExtractor.default"></stringProp>
             <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
-            <stringProp name="BoundaryExtractor.match_number">1</stringProp>
+            <stringProp name="BoundaryExtractor.match_number">-1</stringProp>
           </BoundaryExtractor>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">def matchNr = vars.get(&quot;projectIds_matchNr&quot;)
+
+if (matchNr == null) {
+    log.error(&quot;Переменная projectIds_matchNr не найдена!&quot;)
+    return
+}
+
+def matchNrInt = matchNr.toInteger()
+
+// Генерируем случайный индекс от 1 до matchNr
+def randomIndex = new Random().nextInt(matchNrInt) + 1
+
+// Получаем значения по случайному индексу
+def selectedProjectId = vars.get(&quot;projectIds_&quot; + randomIndex)
+def selectedVersionId = vars.get(&quot;versionIds_&quot; + randomIndex)
+
+
+// Сохраняем выбранные значения в новые переменные
+vars.put(&quot;projectId&quot;, selectedProjectId)
+vars.put(&quot;versionId&quot;, selectedVersionId)
+
+// Логируем для отладки
+log.info(&quot;Selected index: &quot; + randomIndex)
+log.info(&quot;Selected projectId: &quot; + selectedProjectId)
+log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PostProcessor>
           <hashTree/>
         </hashTree>
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Save Test" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_02_TR_04_Save_All/project-srv/project-28">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_02_TR_04_Save_All/project-srv/project-28" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2651,7 +2685,7 @@ log.info(&quot;Current date: &quot; + currentDate)
 vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor Пользователи и Длительность">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor Пользователи и Длительность" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -2662,7 +2696,7 @@ vars.put(&quot;USERS&quot;, ThreadLocalRandom.current().nextInt(1, 4).toString()
 vars.put(&quot;STEP_LENGTH_MS&quot;, (ThreadLocalRandom.current().nextInt(1, 4) * 60000).toString())</stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor SLA">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor SLA" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -2676,7 +2710,7 @@ def time = rnd.nextInt(4)
 vars.put(&quot;random_time&quot;, time.toString())</stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2747,7 +2781,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2797,7 +2831,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/project-srv/project/2708/version/3942-38">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/project-srv/project/2708/version/3942-38" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2811,7 +2845,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2871,7 +2905,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2916,7 +2950,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Signature">
+          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Signature" enabled="true">
             <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
             <stringProp name="BoundaryExtractor.refname">Signature</stringProp>
             <stringProp name="BoundaryExtractor.lboundary">Amz-Signature=</stringProp>
@@ -2926,7 +2960,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
             <stringProp name="BoundaryExtractor.match_number"></stringProp>
           </BoundaryExtractor>
           <hashTree/>
-          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor credential">
+          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor credential" enabled="true">
             <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
             <stringProp name="BoundaryExtractor.refname">credential</stringProp>
             <stringProp name="BoundaryExtractor.lboundary">Amz-Credential=</stringProp>
@@ -2936,7 +2970,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
             <stringProp name="BoundaryExtractor.match_number"></stringProp>
           </BoundaryExtractor>
           <hashTree/>
-          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Date">
+          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Date" enabled="true">
             <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
             <stringProp name="BoundaryExtractor.refname">amz_date</stringProp>
             <stringProp name="BoundaryExtractor.lboundary">-Amz-Date=</stringProp>
@@ -3004,7 +3038,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3066,7 +3100,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3153,7 +3187,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3202,7 +3236,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Reports Open" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_04_TR_03_Reports_Open/report-srv/report/search-27">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_04_TR_03_Reports_Open/report-srv/report/search-27" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -4340,7 +4374,7 @@ vars.put(&quot;random_int3&quot;, errors3.toString() + &apos;%&apos;)</stringPro
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder">
+      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="true">
         <stringProp name="ProxyControlGui.port">8889</stringProp>
         <collectionProp name="ProxyControlGui.exclude_list"/>
         <collectionProp name="ProxyControlGui.include_list">
@@ -4384,7 +4418,7 @@ vars.put(&quot;random_int3&quot;, errors3.toString() + &apos;%&apos;)</stringPro
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -4458,7 +4492,7 @@ vars.put(&quot;random_int3&quot;, errors3.toString() + &apos;%&apos;)</stringPro
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -4497,7 +4531,7 @@ vars.put(&quot;random_int3&quot;, errors3.toString() + &apos;%&apos;)</stringPro
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="UC_03_Test_Start">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="UC_03_Test_Start" enabled="true">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -4508,7 +4542,7 @@ vars.put(&quot;random_int3&quot;, errors3.toString() + &apos;%&apos;)</stringPro
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -4516,7 +4550,7 @@ vars.put(&quot;random_int3&quot;, errors3.toString() + &apos;%&apos;)</stringPro
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -4524,7 +4558,7 @@ vars.put(&quot;random_int3&quot;, errors3.toString() + &apos;%&apos;)</stringPro
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="tests">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="tests" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -4532,7 +4566,7 @@ vars.put(&quot;random_int3&quot;, errors3.toString() + &apos;%&apos;)</stringPro
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Test Start">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Test Start" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -4540,7 +4574,7 @@ vars.put(&quot;random_int3&quot;, errors3.toString() + &apos;%&apos;)</stringPro
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler">
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
           <boolProp name="displayJMeterProperties">false</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
           <boolProp name="displaySystemProperties">false</boolProp>
