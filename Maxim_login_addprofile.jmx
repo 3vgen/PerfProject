@@ -2437,7 +2437,7 @@ if (cookieManager != null) {
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="tests" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_02_TR_03_Tests/project-srv/project/label-23">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_02_TR_03_Tests/project-srv/project/label-23" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2509,7 +2509,7 @@ if (cookieManager != null) {
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_02_TR_04_Tests/project-srv/project-24">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_02_TR_04_Tests/project-srv/project-24" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2545,7 +2545,7 @@ if (cookieManager != null) {
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2590,7 +2590,7 @@ if (cookieManager != null) {
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Project ID">
+          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Project ID" enabled="true">
             <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
             <stringProp name="BoundaryExtractor.refname">projectIds</stringProp>
             <stringProp name="BoundaryExtractor.lboundary">&quot;projectId&quot;:</stringProp>
@@ -2600,7 +2600,7 @@ if (cookieManager != null) {
             <stringProp name="BoundaryExtractor.match_number">-1</stringProp>
           </BoundaryExtractor>
           <hashTree/>
-          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Version Id">
+          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Version Id" enabled="true">
             <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
             <stringProp name="BoundaryExtractor.refname">versionIds</stringProp>
             <stringProp name="BoundaryExtractor.lboundary">&quot;version&quot;:[{&quot;id&quot;:</stringProp>
@@ -2610,7 +2610,7 @@ if (cookieManager != null) {
             <stringProp name="BoundaryExtractor.match_number">-1</stringProp>
           </BoundaryExtractor>
           <hashTree/>
-          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor">
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
             <stringProp name="cacheKey">true</stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
@@ -2767,7 +2767,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Start" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/project-srv/project/2708-37">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/project-srv/project/2708-37" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2891,7 +2891,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/project-srv/project/2708/version/3942/downloadLink-39">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/project-srv/project/2708/version/3942/downloadLink-39" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2981,7 +2981,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
           </BoundaryExtractor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/minio/boomq/boomq/teams/21/projects/2708/v_3942.yaml-40">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/minio/boomq/boomq/teams/21/projects/2708/v_3942.yaml-40" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3093,7 +3093,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;comment&quot;:&quot;&quot;,&quot;labelSet&quot;:[],&quot;projectId&quot;:&quot;2577&quot;,&quot;projectVersionId&quot;:3613,&quot;testMode&quot;:&quot;TEST&quot;,&quot;testProjectId&quot;:&quot;2577&quot;,&quot;testProjectVersionId&quot;:3613}</stringProp>
+                <stringProp name="Argument.value">{&quot;comment&quot;:&quot;&quot;,&quot;labelSet&quot;:[],&quot;projectId&quot;:&quot;${projectId}&quot;,&quot;projectVersionId&quot;:${versionId},&quot;testMode&quot;:&quot;TEST&quot;,&quot;testProjectId&quot;:&quot;${projectId}&quot;,&quot;testProjectVersionId&quot;:${versionId}}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -3158,7 +3158,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/project-srv/project-43">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_03_TR_01_Test_Start/project-srv/project-43" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
