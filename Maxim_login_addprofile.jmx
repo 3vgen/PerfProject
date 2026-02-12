@@ -5,6 +5,8 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
@@ -2588,7 +2590,7 @@ if (cookieManager != null) {
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Project ID">
+          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Project ID" enabled="true">
             <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
             <stringProp name="BoundaryExtractor.refname">projectIds</stringProp>
             <stringProp name="BoundaryExtractor.lboundary">&quot;projectId&quot;:</stringProp>
@@ -2598,7 +2600,7 @@ if (cookieManager != null) {
             <stringProp name="BoundaryExtractor.match_number">-1</stringProp>
           </BoundaryExtractor>
           <hashTree/>
-          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Version Id">
+          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor Version Id" enabled="true">
             <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
             <stringProp name="BoundaryExtractor.refname">versionIds</stringProp>
             <stringProp name="BoundaryExtractor.lboundary">&quot;version&quot;:[{&quot;id&quot;:</stringProp>
@@ -2608,7 +2610,7 @@ if (cookieManager != null) {
             <stringProp name="BoundaryExtractor.match_number">-1</stringProp>
           </BoundaryExtractor>
           <hashTree/>
-          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor">
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
             <stringProp name="cacheKey">true</stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="parameters"></stringProp>
@@ -3315,7 +3317,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Report Add" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_04_TR_04_Report_Add/test-srv/test-86">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_04_TR_04_Report_Add/test-srv/test-86" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3344,7 +3346,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3389,7 +3391,7 @@ vars.put(&quot;random_time&quot;, time.toString())</stringProp>
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -3821,7 +3823,7 @@ vars.put(&quot;random_int3&quot;, errors3.toString() + &apos;%&apos;)</stringPro
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Trending Open" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_05_TR_04_Trending_Open/test-srv/slaReportProfile-58" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_05_TR_04_Trending_Open/test-srv/slaReportProfile-58">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -4047,7 +4049,7 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
               <elementProp name="projectId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.name">projectId</stringProp>
-                <stringProp name="Argument.value">${trend_projectId}</stringProp>
+                <stringProp name="Argument.value">2577</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
               </elementProp>
@@ -4111,6 +4113,12 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
             </collectionProp>
           </HeaderManager>
           <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor">
+            <stringProp name="JSONPostProcessor.referenceNames">IdS</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.content[?(@.displayState == &apos;FINISHED&apos;)].id</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">-1</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_05_TR_04_Trending_Add/test-srv/slaReportProfile/slaTypeList-61">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
@@ -4125,7 +4133,8 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;projectId&quot;:${trend_projectId},&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[8392,8391]}]}</stringProp>
+                <stringProp name="Argument.value">&#xd;
+{&quot;projectId&quot;:2577,&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[${IdS_1},${IdS_2}]}]}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -4203,7 +4212,7 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;projectId&quot;:${trend_projectId},&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[8392,8391]}],&quot;chartProfileList&quot;:[],&quot;tableProfileList&quot;:[]}</stringProp>
+                <stringProp name="Argument.value">{&quot;projectId&quot;:2577,&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[${IdS_1},${IdS_2}]}],&quot;chartProfileList&quot;:[],&quot;tableProfileList&quot;:[]}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -4277,7 +4286,7 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;projectId&quot;:${trend_projectId},&quot;chartProfileList&quot;:[{&quot;slaTypeList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;toDate&quot;:60,&quot;type&quot;:&quot;GENERAL_SLA_TYPE&quot;}]}],&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[8392,8391]}]}</stringProp>
+                <stringProp name="Argument.value">{&quot;projectId&quot;:2577,&quot;chartProfileList&quot;:[{&quot;slaTypeList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;toDate&quot;:60,&quot;type&quot;:&quot;GENERAL_SLA_TYPE&quot;}]}],&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[${IdS_1},${IdS_2}]}]}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -4358,14 +4367,14 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;name&quot;:&quot;untitled_profile_18:59&quot;,&quot;projectId&quot;:${trend_projectId},&quot;chartProfileList&quot;:[{&quot;slaTypeList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;toDate&quot;:60,&quot;type&quot;:&quot;GENERAL_SLA_TYPE&quot;}],&quot;orderInReport&quot;:0}],&quot;tableProfileList&quot;:[{&quot;slaTypeList&quot;:[],&quot;valueType&quot;:&quot;VALUE&quot;,&quot;orderInReport&quot;:1}],&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[8392,8391]}]}</stringProp>
+                <stringProp name="Argument.value">{&quot;name&quot;:&quot;untitled_profile_18:59&quot;,&quot;projectId&quot;:2577,&quot;chartProfileList&quot;:[{&quot;slaTypeList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;toDate&quot;:60,&quot;type&quot;:&quot;GENERAL_SLA_TYPE&quot;}],&quot;orderInReport&quot;:0}],&quot;tableProfileList&quot;:[{&quot;slaTypeList&quot;:[],&quot;valueType&quot;:&quot;VALUE&quot;,&quot;orderInReport&quot;:1}],&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[${IdS_1},${IdS_2}]}]}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -4689,7 +4698,7 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="UC_05_Trend_Report_Create">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="UC_05_Trend_Report_Create" enabled="true">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
