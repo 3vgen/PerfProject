@@ -11,19 +11,19 @@
         <collectionProp name="HeaderManager.headers"/>
       </HeaderManager>
       <hashTree/>
-      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager">
         <collectionProp name="CookieManager.cookies"/>
         <boolProp name="CookieManager.clearEachIteration">true</boolProp>
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
         <boolProp name="clearEachIteration">true</boolProp>
         <boolProp name="useExpires">true</boolProp>
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments">
           <elementProp name="images_path" elementType="Argument">
             <stringProp name="Argument.name">images_path</stringProp>
@@ -736,7 +736,7 @@
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="login user" enabled="false"/>
       <hashTree>
-        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="bzm - Random CSV Data Set Config">
+        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="bzm - Random CSV Data Set Config" enabled="true">
           <stringProp name="filename">users.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="delimiter"></stringProp>
@@ -747,7 +747,7 @@
           <boolProp name="independentListPerThread">false</boolProp>
         </com.blazemeter.jmeter.RandomCSVDataSetConfig>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/auth-srv/login-45">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_01_TR_02_login/auth-srv/login-45" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -785,7 +785,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Sec-Fetch-Mode" elementType="Header">
                 <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2681,7 +2681,7 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Save Test" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_02_TR_04_Save_All/project-srv/project-28" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_02_TR_04_Save_All/project-srv/project-28">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2694,14 +2694,14 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;comment&quot;:&quot;&quot;,&quot;contentFormat&quot;:&quot;yaml&quot;,&quot;contentModelVersion&quot;:&quot;2.0.0&quot;,&quot;labelSet&quot;:[],&quot;requestCount&quot;:1,&quot;testType&quot;:&quot;STABLE&quot;,&quot;projectName&quot;:&quot;test ${random_user} ${current_date}&quot;,&quot;contentV2&quot;:{&quot;boomqTestPlan&quot;:{&quot;threadGroups&quot;:[{&quot;boomqConfiguration&quot;:{&quot;resourceConfiguration&quot;:{&quot;testRunnerIds&quot;:[2]},&quot;loadProfilePercent&quot;:100},&quot;enabled&quot;:true,&quot;id&quot;:&quot;153256da-5557-4aaa-bfd9-1e3a0663d598&quot;,&quot;label&quot;:&quot;Group Mock&quot;,&quot;steps&quot;:[],&quot;type&quot;:&quot;BOOMQ_STABLE_SCALABILITY&quot;,&quot;typeDisplayName&quot;:&quot;&quot;,&quot;threadGroupElements&quot;:[{&quot;children&quot;:[{&quot;children&quot;:&quot;&quot;,&quot;individualProperties&quot;:{&quot;useKeepAlive&quot;:true,&quot;type&quot;:&quot;HTTP&quot;,&quot;retrieveAllEmbeddedResources&quot;:true,&quot;followRedirects&quot;:true,&quot;automaticallyRedirect&quot;:false,&quot;method&quot;:&quot;POST&quot;,&quot;browserCompatibleHeaders&quot;:false,&quot;doMultipartPost&quot;:false,&quot;path&quot;:&quot;/info/postBalances&quot;,&quot;port&quot;:&quot;42082&quot;,&quot;protocol&quot;:&quot;http&quot;,&quot;search&quot;:&quot;?&quot;,&quot;serverName&quot;:&quot;82.142.167.46&quot;,&quot;headers&quot;:{},&quot;queryParameters&quot;:[],&quot;body&quot;:&quot;{\n \&quot;rqUID\&quot;: \&quot;58dgtf565j8547f64ke7\&quot;,\n \&quot;clientId\&quot;: \&quot;8050000000000000000\&quot;,\n \&quot;account\&quot;: \&quot;30500000000000000001\&quot;,\n \&quot;openDate\&quot;: \&quot;2020-01-01\&quot;,\n \&quot;closeDate\&quot;: \&quot;2025-01-01\&quot;\n }&quot;,&quot;bodyParameters&quot;:[]},&quot;timerList&quot;:[],&quot;label&quot;:&quot;http://82.142.167.46:42082/info/postBalances&quot;,&quot;id&quot;:&quot;d930e17d-fa00-433e-83e7-a036b9ddc96e&quot;,&quot;type&quot;:&quot;SAMPLER&quot;,&quot;enabled&quot;:true,&quot;assertions&quot;:[],&quot;extractors&quot;:[],&quot;typeDisplayName&quot;:&quot;HTTP Request&quot;}],&quot;individualProperties&quot;:{&quot;includeDurationOfAllElementsToGeneratedSampler&quot;:false,&quot;generateParentSampler&quot;:false,&quot;type&quot;:&quot;TRANSACTION&quot;},&quot;timerList&quot;:[],&quot;label&quot;:&quot;Transaction 1&quot;,&quot;id&quot;:&quot;02cb4de3-bd39-4eef-abe4-3ade3ca5c244&quot;,&quot;type&quot;:&quot;CONTROLLER&quot;,&quot;enabled&quot;:true,&quot;creationIndex&quot;:1,&quot;typeDisplayName&quot;:&quot;Transaction Controller&quot;}]}],&quot;runThreadGroupConsecutively&quot;:false,&quot;loadProfileType&quot;:&quot;PER_TEST&quot;,&quot;functionalMode&quot;:false,&quot;runTearDownAfterShutdown&quot;:true,&quot;configurationElements&quot;:[{&quot;clearControlledByThreadGroup&quot;:false,&quot;cookiePolicy&quot;:&quot;STANDARD&quot;,&quot;clearEachIteration&quot;:false,&quot;userDefinedCookies&quot;:[],&quot;label&quot;:&quot;Http cookie manager&quot;,&quot;id&quot;:&quot;915b23c4-b97a-43a1-a79b-a388ede0c7f7&quot;,&quot;type&quot;:&quot;HTTP_COOKIE_MANAGER&quot;,&quot;enabled&quot;:true},{&quot;headers&quot;:{&quot;User-Agent&quot;:&quot;Mozilla/5.0&quot;},&quot;label&quot;:&quot;Http header manager&quot;,&quot;id&quot;:&quot;a15d4429-5b50-40d4-ab7c-f6dd2adccb5a&quot;,&quot;type&quot;:&quot;HTTP_HEADER_MANAGER&quot;,&quot;enabled&quot;:true},{&quot;label&quot;:&quot;Http request defaults&quot;,&quot;type&quot;:&quot;HTTP_REQUEST_DEFAULTS&quot;,&quot;enabled&quot;:true,&quot;id&quot;:&quot;d5ed4138-1f75-41d6-85fa-98714ff53aa4&quot;,&quot;connectTimeout&quot;:60000,&quot;responseTimeout&quot;:120000}],&quot;loadProfile&quot;:{&quot;usersPerStep&quot;:${USERS},&quot;rampDownMs&quot;:0,&quot;durationAddedOnLastStepMs&quot;:0,&quot;boomqProfileType&quot;:&quot;STABLE&quot;,&quot;rampUpMs&quot;:60000,&quot;stepLengthMs&quot;:${STEP_LENGTH_MS},&quot;stepCount&quot;:1},&quot;timers&quot;:[{&quot;timerType&quot;:&quot;CONSTANT&quot;,&quot;label&quot;:&quot;boomq_timer_f56efc05-cb64-40f1-8983-50ad20229fd4&quot;,&quot;id&quot;:&quot;f56efc05-cb64-40f1-8983-50ad20229fd4&quot;,&quot;durationMs&quot;:8000,&quot;enabled&quot;:true}]},&quot;slaGroupList&quot;:[{&quot;type&quot;:&quot;GENERAL_TEST_SLA&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;slaList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;operation&quot;:&quot;LESS_EQUALS&quot;,&quot;status&quot;:&quot;NOT_COUNTED&quot;,&quot;toDate&quot;:120,&quot;value&quot;:${random_time}}]}],&quot;supportingFiles&quot;:[],&quot;supportingFilesV2&quot;:[]},&quot;totalDuration&quot;:120}</stringProp>
+                <stringProp name="Argument.value">{&quot;comment&quot;:&quot;&quot;,&quot;contentFormat&quot;:&quot;yaml&quot;,&quot;contentModelVersion&quot;:&quot;2.0.0&quot;,&quot;labelSet&quot;:[],&quot;requestCount&quot;:1,&quot;testType&quot;:&quot;STABLE&quot;,&quot;projectName&quot;:&quot;test ${random_user} ${current_date}&quot;,&quot;contentV2&quot;:{&quot;boomqTestPlan&quot;:{&quot;threadGroups&quot;:[{&quot;boomqConfiguration&quot;:{&quot;resourceConfiguration&quot;:{&quot;testRunnerIds&quot;:[2]},&quot;loadProfilePercent&quot;:100},&quot;enabled&quot;:true,&quot;id&quot;:&quot;153256da-5557-4aaa-bfd9-1e3a0663d598&quot;,&quot;label&quot;:&quot;Group Mock&quot;,&quot;steps&quot;:[],&quot;type&quot;:&quot;BOOMQ_STABLE_SCALABILITY&quot;,&quot;typeDisplayName&quot;:&quot;&quot;,&quot;threadGroupElements&quot;:[{&quot;children&quot;:[{&quot;children&quot;:&quot;&quot;,&quot;individualProperties&quot;:{&quot;useKeepAlive&quot;:true,&quot;type&quot;:&quot;HTTP&quot;,&quot;retrieveAllEmbeddedResources&quot;:true,&quot;followRedirects&quot;:true,&quot;automaticallyRedirect&quot;:false,&quot;method&quot;:&quot;POST&quot;,&quot;browserCompatibleHeaders&quot;:false,&quot;doMultipartPost&quot;:false,&quot;path&quot;:&quot;/info/postBalances&quot;,&quot;port&quot;:&quot;42082&quot;,&quot;protocol&quot;:&quot;http&quot;,&quot;search&quot;:&quot;?&quot;,&quot;serverName&quot;:&quot;82.142.167.46&quot;,&quot;headers&quot;:{},&quot;queryParameters&quot;:[],&quot;body&quot;:&quot;{\n \&quot;rqUID\&quot;: \&quot;58dgtf565j8547f64ke7\&quot;,\n \&quot;clientId\&quot;: \&quot;8050000000000000000\&quot;,\n \&quot;account\&quot;: \&quot;30500000000000000001\&quot;,\n \&quot;openDate\&quot;: \&quot;2020-01-01\&quot;,\n \&quot;closeDate\&quot;: \&quot;2025-01-01\&quot;\n }&quot;,&quot;bodyParameters&quot;:[]},&quot;timerList&quot;:[],&quot;label&quot;:&quot;http://82.142.167.46:42082/info/postBalances&quot;,&quot;id&quot;:&quot;d930e17d-fa00-433e-83e7-a036b9ddc96e&quot;,&quot;type&quot;:&quot;SAMPLER&quot;,&quot;enabled&quot;:true,&quot;assertions&quot;:[],&quot;extractors&quot;:[],&quot;typeDisplayName&quot;:&quot;HTTP Request&quot;}],&quot;individualProperties&quot;:{&quot;includeDurationOfAllElementsToGeneratedSampler&quot;:false,&quot;generateParentSampler&quot;:false,&quot;type&quot;:&quot;TRANSACTION&quot;},&quot;timerList&quot;:[],&quot;label&quot;:&quot;Transaction 1&quot;,&quot;id&quot;:&quot;02cb4de3-bd39-4eef-abe4-3ade3ca5c244&quot;,&quot;type&quot;:&quot;CONTROLLER&quot;,&quot;enabled&quot;:true,&quot;creationIndex&quot;:1,&quot;typeDisplayName&quot;:&quot;Transaction Controller&quot;}]}],&quot;runThreadGroupConsecutively&quot;:false,&quot;loadProfileType&quot;:&quot;PER_TEST&quot;,&quot;functionalMode&quot;:false,&quot;runTearDownAfterShutdown&quot;:true,&quot;configurationElements&quot;:[{&quot;clearControlledByThreadGroup&quot;:false,&quot;cookiePolicy&quot;:&quot;STANDARD&quot;,&quot;clearEachIteration&quot;:false,&quot;userDefinedCookies&quot;:[],&quot;label&quot;:&quot;Http cookie manager&quot;,&quot;id&quot;:&quot;915b23c4-b97a-43a1-a79b-a388ede0c7f7&quot;,&quot;type&quot;:&quot;HTTP_COOKIE_MANAGER&quot;,&quot;enabled&quot;:true},{&quot;headers&quot;:{&quot;User-Agent&quot;:&quot;Mozilla/5.0&quot;},&quot;label&quot;:&quot;Http header manager&quot;,&quot;id&quot;:&quot;a15d4429-5b50-40d4-ab7c-f6dd2adccb5a&quot;,&quot;type&quot;:&quot;HTTP_HEADER_MANAGER&quot;,&quot;enabled&quot;:true},{&quot;label&quot;:&quot;Http request defaults&quot;,&quot;type&quot;:&quot;HTTP_REQUEST_DEFAULTS&quot;,&quot;enabled&quot;:true,&quot;id&quot;:&quot;d5ed4138-1f75-41d6-85fa-98714ff53aa4&quot;,&quot;connectTimeout&quot;:60000,&quot;responseTimeout&quot;:120000}],&quot;loadProfile&quot;:{&quot;usersPerStep&quot;:1,&quot;rampDownMs&quot;:0,&quot;durationAddedOnLastStepMs&quot;:0,&quot;boomqProfileType&quot;:&quot;STABLE&quot;,&quot;rampUpMs&quot;:60000,&quot;stepLengthMs&quot;:60000,&quot;stepCount&quot;:1},&quot;timers&quot;:[{&quot;timerType&quot;:&quot;CONSTANT&quot;,&quot;label&quot;:&quot;boomq_timer_f56efc05-cb64-40f1-8983-50ad20229fd4&quot;,&quot;id&quot;:&quot;f56efc05-cb64-40f1-8983-50ad20229fd4&quot;,&quot;durationMs&quot;:8000,&quot;enabled&quot;:true}]},&quot;slaGroupList&quot;:[{&quot;type&quot;:&quot;GENERAL_TEST_SLA&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;slaList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;operation&quot;:&quot;LESS_EQUALS&quot;,&quot;status&quot;:&quot;NOT_COUNTED&quot;,&quot;toDate&quot;:120,&quot;value&quot;:${random_time}}]}],&quot;supportingFiles&quot;:[],&quot;supportingFilesV2&quot;:[]},&quot;totalDuration&quot;:120}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor Дата и Время" enabled="true">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor Дата и Время">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -2720,7 +2720,7 @@ log.info(&quot;Current date: &quot; + currentDate)
 vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor Пользователи и Длительность" enabled="true">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor Пользователи и Длительность">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -2731,7 +2731,7 @@ vars.put(&quot;USERS&quot;, ThreadLocalRandom.current().nextInt(1, 4).toString()
 vars.put(&quot;STEP_LENGTH_MS&quot;, (ThreadLocalRandom.current().nextInt(1, 4) * 60000).toString())</stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor SLA" enabled="true">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor SLA">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -4404,7 +4404,7 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Trending Save" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_05_TR_04_Trending_Save/test-srv/slaReportProfile-64" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_05_TR_04_Trending_Save/test-srv/slaReportProfile-64">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -5139,7 +5139,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -5195,7 +5195,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="change pass" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="change pass">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -5211,7 +5211,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="UC_02_Test_Create" enabled="false">
-        <intProp name="ThreadGroup.num_threads">5</intProp>
+        <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -5271,7 +5271,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -5287,7 +5287,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="tests" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="tests">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -5295,7 +5295,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Test Start" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Test Start">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -5321,7 +5321,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -5353,7 +5353,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Report Save" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Report Save">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -5361,26 +5361,6 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
-          <intProp name="ActionProcessor.action">1</intProp>
-          <intProp name="ActionProcessor.target">0</intProp>
-          <stringProp name="ActionProcessor.duration">3000</stringProp>
-        </TestAction>
-        <hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
-            <stringProp name="ConstantTimer.delay">3000</stringProp>
-          </ConstantTimer>
-          <hashTree/>
-          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="false">
-            <doubleProp>
-              <name>throughput</name>
-              <value>10.0</value>
-              <savedValue>0.0</savedValue>
-            </doubleProp>
-            <intProp name="calcMode">0</intProp>
-          </ConstantThroughputTimer>
-          <hashTree/>
-        </hashTree>
         <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
           <boolProp name="displayJMeterProperties">false</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
@@ -5399,7 +5379,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -5431,7 +5411,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Trending Save" enabled="true">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Trending Save">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -5446,34 +5426,27 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="jp@gc - Ultimate Thread Group Test Create" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_01_ Profile_registration_MaxPerf">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-231436561">
+          <collectionProp name="1730164044">
             <stringProp name="1567">10</stringProp>
             <stringProp name="48">0</stringProp>
-            <stringProp name="1629">30</stringProp>
-            <stringProp name="1688091">7200</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1665027">6900</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="23710333">
+          <collectionProp name="1103409695">
             <stringProp name="49">1</stringProp>
-            <stringProp name="56313">900</stringProp>
+            <stringProp name="1509345">1200</stringProp>
             <stringProp name="50547">300</stringProp>
-            <stringProp name="1656378">6000</stringProp>
+            <stringProp name="1633314">5700</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-17838561">
+          <collectionProp name="-511304024">
             <stringProp name="49">1</stringProp>
-            <stringProp name="1515111">1800</stringProp>
+            <stringProp name="1541058">2400</stringProp>
             <stringProp name="50547">300</stringProp>
-            <stringProp name="1627548">5100</stringProp>
-            <stringProp name="48">0</stringProp>
-          </collectionProp>
-          <collectionProp name="137988913">
-            <stringProp name="49">1</stringProp>
-            <stringProp name="1543941">2700</stringProp>
-            <stringProp name="50547">300</stringProp>
-            <stringProp name="1598718">4200</stringProp>
+            <stringProp name="1601601">4500</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
           <collectionProp name="1833097384">
@@ -5483,25 +5456,18 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
             <stringProp name="1569888">3300</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="1941216552">
+          <collectionProp name="-905129450">
             <stringProp name="49">1</stringProp>
-            <stringProp name="1601601">4500</stringProp>
+            <stringProp name="1604484">4800</stringProp>
             <stringProp name="50547">300</stringProp>
-            <stringProp name="1541058">2400</stringProp>
+            <stringProp name="1538175">2100</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-657895576">
+          <collectionProp name="-740937923">
             <stringProp name="49">1</stringProp>
-            <stringProp name="1630431">5400</stringProp>
+            <stringProp name="1656378">6000</stringProp>
             <stringProp name="50547">300</stringProp>
-            <stringProp name="1512228">1500</stringProp>
-            <stringProp name="48">0</stringProp>
-          </collectionProp>
-          <collectionProp name="-2128984684">
-            <stringProp name="49">1</stringProp>
-            <stringProp name="1659261">6300</stringProp>
-            <stringProp name="50547">300</stringProp>
-            <stringProp name="53430">600</stringProp>
+            <stringProp name="56313">900</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
         </collectionProp>
@@ -5512,80 +5478,685 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
       </kg.apc.jmeter.threads.UltimateThreadGroup>
       <hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
           <stringProp name="ActionProcessor.duration">0</stringProp>
         </TestAction>
         <hashTree>
-          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
             <intProp name="calcMode">0</intProp>
             <doubleProp>
               <name>throughput</name>
-              <value>1.0</value>
+              <value>0.625</value>
               <savedValue>0.0</savedValue>
             </doubleProp>
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_01_Profile_registration_Total">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="2255103">Home</stringProp>
-            </collectionProp>
-          </ModuleController>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_01_TR_01_Home">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="2255103">Home</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_01_TR_02_login_admin">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-163179560">login admin</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_01_TR_03_Groups">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Groups">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="2141373940">Groups</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_01_TR_04_Edit_Group">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Edit Group">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1931974486">Edit Groups</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_01_TR_05_Add_Profile">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Add Profile">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="1919528170">Add Profile</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_01_TR_06_Copy_Adress">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="copy adress">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1079248511">copy adress</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_01_TR_07_open adress">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="open adress">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-653256436">open adress</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_01_TR_08_Change_Pass">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="change pass">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1712779647">change pass</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+      </hashTree>
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_02_Test Create_MaxPerf">
+        <collectionProp name="ultimatethreadgroupdata">
+          <collectionProp name="1730164044">
+            <stringProp name="1567">10</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1665027">6900</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="1103409695">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1509345">1200</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1633314">5700</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-511304024">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1541058">2400</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1601601">4500</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="1833097384">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1572771">3600</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1569888">3300</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-905129450">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1604484">4800</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1538175">2100</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-740937923">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1656378">6000</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="56313">900</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      </kg.apc.jmeter.threads.UltimateThreadGroup>
+      <hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">0</stringProp>
+        </TestAction>
+        <hashTree>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
+            <intProp name="calcMode">0</intProp>
+            <doubleProp>
+              <name>throughput</name>
+              <value>2.5</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+          </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller2" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_02_Test_Create_Total">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login" enabled="true">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="-1805769182">login user</stringProp>
-            </collectionProp>
-          </ModuleController>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_02_TR_01_Home">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="2255103">Home</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_02_TR_02_Login">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1805769182">login user</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_02_TR_03_Test">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="tests">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="110251553">tests</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_02_TR_04_Save_Test">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Save_Test">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="2128964949">Save Test</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+      </hashTree>
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_03_ Test_Start_MaxPerf">
+        <collectionProp name="ultimatethreadgroupdata">
+          <collectionProp name="1730164044">
+            <stringProp name="1567">10</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1665027">6900</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="1103409695">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1509345">1200</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1633314">5700</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-511304024">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1541058">2400</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1601601">4500</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="1833097384">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1572771">3600</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1569888">3300</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-905129450">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1604484">4800</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1538175">2100</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-740937923">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1656378">6000</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="56313">900</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      </kg.apc.jmeter.threads.UltimateThreadGroup>
+      <hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">0</stringProp>
+        </TestAction>
+        <hashTree>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
+            <intProp name="calcMode">0</intProp>
+            <doubleProp>
+              <name>throughput</name>
+              <value>3.75</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+          </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="false">
-          <collectionProp name="ModuleController.node_path">
-            <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="2255103">Home</stringProp>
-          </collectionProp>
-        </ModuleController>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_03_Test_Start_Total">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_03_TR_01_Home">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="2255103">Home</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_03_TR_02_Login">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1805769182">login user</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_03_TR_03_Tests">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="tests">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="110251553">tests</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_03_TR_04_Test_Start">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Test Start">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-2064264364">Test Start</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login" enabled="false">
-          <collectionProp name="ModuleController.node_path">
-            <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="-1805769182">login user</stringProp>
+      </hashTree>
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_04_Report_Create_MaxPerf">
+        <collectionProp name="ultimatethreadgroupdata">
+          <collectionProp name="1730164044">
+            <stringProp name="1567">10</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1665027">6900</stringProp>
+            <stringProp name="48">0</stringProp>
           </collectionProp>
-        </ModuleController>
-        <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="tests" enabled="true">
-          <collectionProp name="ModuleController.node_path">
-            <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="110251553">tests</stringProp>
+          <collectionProp name="1103409695">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1509345">1200</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1633314">5700</stringProp>
+            <stringProp name="48">0</stringProp>
           </collectionProp>
-        </ModuleController>
-        <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Save_Test" enabled="true">
-          <collectionProp name="ModuleController.node_path">
-            <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="2128964949">Save Test</stringProp>
+          <collectionProp name="-511304024">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1541058">2400</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1601601">4500</stringProp>
+            <stringProp name="48">0</stringProp>
           </collectionProp>
-        </ModuleController>
+          <collectionProp name="1833097384">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1572771">3600</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1569888">3300</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-905129450">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1604484">4800</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1538175">2100</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-740937923">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1656378">6000</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="56313">900</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      </kg.apc.jmeter.threads.UltimateThreadGroup>
+      <hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">0</stringProp>
+        </TestAction>
+        <hashTree>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
+            <intProp name="calcMode">0</intProp>
+            <doubleProp>
+              <name>throughput</name>
+              <value>0.5625</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+          </ConstantThroughputTimer>
+          <hashTree/>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_04_Report_Create_Total">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_04_TR_01_Home">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="2255103">Home</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_04_TR_02_Login">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login" enabled="true">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1805769182">login user</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_04_TR_03_Report_Open">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Reports Open">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="1605225547">Reports Open</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_04_TR_04_Report_Add">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Report Add">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-371719243">Report Add</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_04_TR_05_Report_Save">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Report Save">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="1362139369">Report Save</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
         <hashTree/>
+      </hashTree>
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_05_Trend_Report_Create_MaxPerf">
+        <collectionProp name="ultimatethreadgroupdata">
+          <collectionProp name="1730164044">
+            <stringProp name="1567">10</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1665027">6900</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="1103409695">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1509345">1200</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1633314">5700</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-511304024">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1541058">2400</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1601601">4500</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="1833097384">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1572771">3600</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1569888">3300</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-905129450">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1604484">4800</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1538175">2100</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-740937923">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1656378">6000</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="56313">900</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      </kg.apc.jmeter.threads.UltimateThreadGroup>
+      <hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">0</stringProp>
+        </TestAction>
+        <hashTree>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
+            <intProp name="calcMode">0</intProp>
+            <doubleProp>
+              <name>throughput</name>
+              <value>6.25</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+          </ConstantThroughputTimer>
+          <hashTree/>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_05_Trend_Report_Create_Total">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_04_TR_01_Home">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="2255103">Home</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_04_TR_02_Login">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-1805769182">login user</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_05_TR_03_Trending_Open">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Trending Open">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="1486017637">Trending Open</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_05_TR_04_Trending_Add">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Trending Add">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="-229172442">Trending Add</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_04_TR_05_Trending_Save">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Trending Save">
+              <collectionProp name="ModuleController.node_path">
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="764597751">Test Plan</stringProp>
+                <stringProp name="1486122904">Trending Save</stringProp>
+              </collectionProp>
+            </ModuleController>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
         <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler">
           <boolProp name="displayJMeterProperties">false</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
