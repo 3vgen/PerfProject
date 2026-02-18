@@ -5,6 +5,8 @@ WHERE test_project_id IN (SELECT id FROM test_project WHERE team_id = 21);
 
 DELETE FROM test_project WHERE team_id = 21;
 
+\c backend
+
 BEGIN;
 
 DELETE FROM test_result_charts_data 
