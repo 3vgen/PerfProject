@@ -1,0 +1,184 @@
+1. Поменять конфигурационный файл и перезапустить контейнер
+1.1 Сделать копию старого файла и переименовать на txt 
+/home/centos/dc_boomq/project-srv/dc.local.ent.project-srv.yml
+
+1.2 Сделать новый исходный docker compose
+
+version: "3.7"
+
+services:
+  project-srv:
+    image: 284940552014.dkr.ecr.us-east-1.amazonaws.com/ent_project_srv:${backend_tag}
+    container_name: project_srv
+    hostname: project-srv
+    restart: always
+
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE=30
+      - SPRING_DATASOURCE_HIKARI_MINIMUM_IDLE=10
+      - SPRING_DATASOURCE_HIKARI_CONNECTION_TIMEOUT=30000
+      - SPRING_DATASOURCE_HIKARI_IDLE_TIMEOUT=600000
+      - SPRING_DATASOURCE_HIKARI_MAX_LIFETIME=1800000
+
+    # Переопределяем команду, чтобы убрать -Xmx512m из образа
+    command: ["java","-Xms2g","-Xmx2g","-jar","/app/project-service-1.0.0.jar"]
+
+    # Ограничения ресурсов (хост ~15GB RAM)
+    mem_limit: 4g
+    mem_reservation: 3g
+    cpus: "4.0"
+
+    ports:
+      - "7050:7050"
+      - "7051:7051"
+      - "7055:7055"
+
+    networks:
+      - boomq_network
+
+    volumes:
+      - /etc/machine-id:/etc/machine-id:rw
+
+    healthcheck:
+      test: wget localhost:7051/actuator/health -q -O - | grep "\"status\":\"UP\"" || exit 1
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 1m30s
+
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100Mb"
+        max-file: "10"
+
+networks:
+  boomq_network:
+    external: true
+1.3 Перезапуск docker compose -f dc.local.ent.project-srv.yml down
+1.4 Запуск docker compose -f dc.local.ent.project-srv.yml up -d --force-recreate
+
+2. Очистить БД
+2.1 Подсоединиться docker exec -it postgresql psql -U postgres
+2.2 Выполнить скрипт
+\c project
+
+DELETE FROM project_version 
+WHERE test_project_id IN (SELECT id FROM test_project WHERE team_id = 21);
+
+DELETE FROM test_project WHERE team_id = 21;
+
+\c backend
+
+BEGIN;
+
+DELETE FROM test_result_charts_data 
+WHERE test_id IN (SELECT id FROM test_v2 WHERE team_id = 21);
+
+DELETE FROM test_result_files_data 
+WHERE test_id IN (SELECT id FROM test_v2 WHERE team_id = 21);
+
+DELETE FROM test_result_sla_data 
+WHERE test_id IN (SELECT id FROM test_v2 WHERE team_id = 21);
+
+DELETE FROM test_label 
+WHERE test_id IN (SELECT id FROM test_v2 WHERE team_id = 21);
+
+DELETE FROM test_resources_estimate 
+WHERE test_id IN (SELECT id FROM test_v2 WHERE team_id = 21);
+
+DELETE FROM test_error 
+WHERE test_id IN (SELECT id FROM test_v2 WHERE team_id = 21);
+
+DELETE FROM test_result 
+WHERE test_id IN (SELECT id FROM test_v2 WHERE team_id = 21);
+
+DELETE FROM test_v2 WHERE team_id = 21;
+
+COMMIT;
+
+\c backend
+
+delete from sla_report_profile where team_id = 21;
+
+\c report
+
+delete from report where team_id = 21;
+2.3 Создать триггер
+\c backend
+CREATE INDEX IF NOT EXISTS ix_sla_report_profile_team_id_id
+ON sla_report_profile (team_id, id);
+
+CREATE OR REPLACE FUNCTION cleanup_sla_safe()
+RETURNS INTEGER AS $$
+DECLARE
+    deleted_count INTEGER := 0;
+    got_lock BOOLEAN;
+BEGIN
+    -- Пытаемся получить блокировку
+    got_lock := pg_try_advisory_lock(21, 400);
+    
+    IF NOT got_lock THEN
+        -- Другой процесс уже чистит, пропускаем
+        RETURN 0;
+    END IF;
+    
+    -- Выполняем очистку
+    WITH need AS (
+        SELECT EXISTS (
+            SELECT 1
+            FROM sla_report_profile
+            WHERE team_id = 21
+            ORDER BY id DESC
+            OFFSET 400
+            LIMIT 1
+        ) AS need_cleanup
+    ),
+    del AS (
+        SELECT id
+        FROM sla_report_profile
+        WHERE team_id = 21
+        ORDER BY id ASC
+        LIMIT 100
+    ),
+    deleted AS (
+        DELETE FROM sla_report_profile
+        WHERE (SELECT need_cleanup FROM need)
+          AND id IN (SELECT id FROM del)
+        RETURNING id
+    )
+    SELECT COUNT(*) INTO deleted_count FROM deleted;
+    
+    -- Освобождаем блокировку
+    PERFORM pg_advisory_unlock(21, 400);
+    
+    RETURN deleted_count;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Триггер
+CREATE OR REPLACE FUNCTION trigger_cleanup_sla()
+RETURNS TRIGGER AS $$
+BEGIN
+    PERFORM cleanup_sla_safe();
+    RETURN NULL;
+END;
+$$ LANGUAGE plpgsql;
+
+DROP TRIGGER IF EXISTS trg_cleanup_sla ON sla_report_profile;
+
+CREATE TRIGGER trg_cleanup_sla
+AFTER INSERT ON sla_report_profile
+FOR EACH STATEMENT
+EXECUTE FUNCTION trigger_cleanup_sla();
+
+3. Изменить postgres.conf
+3.1 Зайти в терминал контейнера Postgres docker exec -it postgresql bash
+3.2 Зайти cd /var/lib/postgresql/data
+3.3 
+echo "max_connections = 200" >> postgresql.conf
+echo "shared_buffers = 1GB >> postgresql.conf
+echo "work_mem = 16MB" >> postgresql.conf
+echo "maintenance_work_mem = 256MB" >> postgresql.conf
+3.4 Перезапустить контейнер docker restart postgresql
