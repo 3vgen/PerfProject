@@ -4565,7 +4565,7 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
               <elementProp name="projectId" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.name">projectId</stringProp>
-                <stringProp name="Argument.value">24158</stringProp>
+                <stringProp name="Argument.value">2577</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
               </elementProp>
@@ -4650,7 +4650,7 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">&#xd;
-{&quot;projectId&quot;:24158,&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[11425,11422]}]}</stringProp>
+{&quot;projectId&quot;:2577,&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[8386,8384]}]}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -4728,7 +4728,7 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;projectId&quot;:24158,&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[11425,11422]}],&quot;chartProfileList&quot;:[],&quot;tableProfileList&quot;:[]}</stringProp>
+                <stringProp name="Argument.value">{&quot;projectId&quot;:2577,&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[8386,8384]}],&quot;chartProfileList&quot;:[],&quot;tableProfileList&quot;:[]}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -4802,7 +4802,7 @@ log.info(&quot;Selected versionId: &quot; + selectedVersionId)</stringProp>
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;projectId&quot;:24158,&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[11425,11422]}],&quot;chartProfileList&quot;:[{&quot;slaTypeList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;toDate&quot;:120,&quot;type&quot;:&quot;GENERAL_SLA_TYPE&quot;}],&quot;orderInReport&quot;:0}],&quot;tableProfileList&quot;:[{&quot;tableId&quot;:null,&quot;slaTypeList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;toDate&quot;:120,&quot;type&quot;:&quot;GENERAL_SLA_TYPE&quot;}],&quot;valueType&quot;:&quot;PREVIOUS_TEST_DIFF&quot;,&quot;previousTestDiffType&quot;:&quot;ABSOLUTE&quot;,&quot;orderInReport&quot;:1}]}</stringProp>
+                <stringProp name="Argument.value">{&quot;projectId&quot;:2577,&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[8386,8384]}],&quot;chartProfileList&quot;:[{&quot;slaTypeList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;toDate&quot;:120,&quot;type&quot;:&quot;GENERAL_SLA_TYPE&quot;}],&quot;orderInReport&quot;:0}],&quot;tableProfileList&quot;:[{&quot;tableId&quot;:null,&quot;slaTypeList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;toDate&quot;:120,&quot;type&quot;:&quot;GENERAL_SLA_TYPE&quot;}],&quot;valueType&quot;:&quot;PREVIOUS_TEST_DIFF&quot;,&quot;previousTestDiffType&quot;:&quot;ABSOLUTE&quot;,&quot;orderInReport&quot;:1}]}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -5609,7 +5609,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="________Trending Save Hard Code_________" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_05_TR_04_Trending_Save/test-srv/slaReportProfile-64" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_05_TR_04_Trending_Save/test-srv/slaReportProfile-64">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -5622,7 +5622,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;name&quot;:&quot;trend_${current_date}&quot;,&quot;projectId&quot;:24158,&quot;chartProfileList&quot;:[{&quot;slaTypeList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;toDate&quot;:120,&quot;type&quot;:&quot;GENERAL_SLA_TYPE&quot;}],&quot;orderInReport&quot;:0}],&quot;tableProfileList&quot;:[{&quot;tableId&quot;:null,&quot;slaTypeList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;toDate&quot;:120,&quot;type&quot;:&quot;GENERAL_SLA_TYPE&quot;}],&quot;valueType&quot;:&quot;PREVIOUS_TEST_DIFF&quot;,&quot;previousTestDiffType&quot;:&quot;ABSOLUTE&quot;,&quot;orderInReport&quot;:1}],&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[11425,11422]}]}</stringProp>
+                <stringProp name="Argument.value">{&quot;name&quot;:&quot;trend_${current_date}&quot;,&quot;projectId&quot;:2577,&quot;chartProfileList&quot;:[{&quot;slaTypeList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;toDate&quot;:120,&quot;type&quot;:&quot;GENERAL_SLA_TYPE&quot;}],&quot;orderInReport&quot;:0}],&quot;tableProfileList&quot;:[{&quot;tableId&quot;:null,&quot;slaTypeList&quot;:[{&quot;fromDate&quot;:0,&quot;restrictionType&quot;:&quot;AVERAGE&quot;,&quot;targetType&quot;:&quot;TEST&quot;,&quot;toDate&quot;:120,&quot;type&quot;:&quot;GENERAL_SLA_TYPE&quot;}],&quot;valueType&quot;:&quot;PREVIOUS_TEST_DIFF&quot;,&quot;previousTestDiffType&quot;:&quot;ABSOLUTE&quot;,&quot;orderInReport&quot;:1}],&quot;testFilterExpressionList&quot;:[{&quot;type&quot;:&quot;TEST_ID_EXPRESSION&quot;,&quot;testIdList&quot;:[8386,8384]}]}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -8884,74 +8884,74 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_01_ Profile_registration_MaxPerf_FULL" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_01_ Profile_registration_MaxPerf_FULL">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="2070342788">
-            <stringProp name="53">5</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="53430">600</stringProp>
-            <stringProp name="1543941">2700</stringProp>
-            <stringProp name="48">0</stringProp>
-          </collectionProp>
-          <collectionProp name="-1789517151">
+          <collectionProp name="1872237351">
             <stringProp name="49">1</stringProp>
-            <stringProp name="56313">900</stringProp>
             <stringProp name="48">0</stringProp>
-            <stringProp name="1541058">2400</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="1630431">5400</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="693177049">
+          <collectionProp name="-1835014082">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="53430">600</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="1604484">4800</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-1532805487">
             <stringProp name="49">1</stringProp>
             <stringProp name="1509345">1200</stringProp>
             <stringProp name="48">0</stringProp>
-            <stringProp name="1538175">2100</stringProp>
+            <stringProp name="1598718">4200</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-442995197">
-            <stringProp name="49">1</stringProp>
-            <stringProp name="1512228">1500</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="1515111">1800</stringProp>
-            <stringProp name="48">0</stringProp>
-          </collectionProp>
-          <collectionProp name="-1831066045">
+          <collectionProp name="237196105">
             <stringProp name="49">1</stringProp>
             <stringProp name="1515111">1800</stringProp>
             <stringProp name="48">0</stringProp>
-            <stringProp name="1512228">1500</stringProp>
+            <stringProp name="1572771">3600</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-1905935079">
-            <stringProp name="49">1</stringProp>
-            <stringProp name="1538175">2100</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="1509345">1200</stringProp>
-            <stringProp name="48">0</stringProp>
-          </collectionProp>
-          <collectionProp name="481484385">
+          <collectionProp name="1170595697">
             <stringProp name="49">1</stringProp>
             <stringProp name="1541058">2400</stringProp>
             <stringProp name="48">0</stringProp>
-            <stringProp name="56313">900</stringProp>
+            <stringProp name="1567005">3000</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-1676576223">
-            <stringProp name="49">1</stringProp>
-            <stringProp name="1543941">2700</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="53430">600</stringProp>
-            <stringProp name="48">0</stringProp>
-          </collectionProp>
-          <collectionProp name="453696137">
+          <collectionProp name="-978509903">
             <stringProp name="49">1</stringProp>
             <stringProp name="1567005">3000</stringProp>
             <stringProp name="48">0</stringProp>
-            <stringProp name="50547">300</stringProp>
+            <stringProp name="1541058">2400</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-56038367">
+          <collectionProp name="-1412927095">
             <stringProp name="49">1</stringProp>
-            <stringProp name="1569888">3300</stringProp>
+            <stringProp name="1572771">3600</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="1515111">1800</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="2113528529">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1598718">4200</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="1509345">1200</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-650709826">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1604484">4800</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="53430">600</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-188823065">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1630431">5400</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="48">0</stringProp>
@@ -9096,7 +9096,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_02_Test Create_MaxPerf_FULL" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_02_Test Create_MaxPerf_FULL" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="1872237351">
             <stringProp name="49">1</stringProp>
@@ -9256,7 +9256,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_03_ Test_Start_MaxPerf_FULL" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_03_ Test_Start_MaxPerf_FULL" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="1872237351">
             <stringProp name="49">1</stringProp>
@@ -9416,7 +9416,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_04_Report_Create_MaxPerf_FULL" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_04_Report_Create_MaxPerf_FULL" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="1872237351">
             <stringProp name="49">1</stringProp>
@@ -9589,7 +9589,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_05_Trend_Report_Create_MaxPerf3 Hard Code_FULL" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_05_Trend_Report_Create_MaxPerf3 Hard Code_FULL" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-1670060330">
             <stringProp name="50">2</stringProp>
@@ -10710,7 +10710,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_01_ Profile_registration_Stable">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_01_ Profile_registration_Stable" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="1876035097">
             <stringProp name="55">7</stringProp>
@@ -10859,7 +10859,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_02_Test Create_MaxPerf_Stable">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_02_Test Create_MaxPerf_Stable" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="90362557">
             <stringProp name="55">7</stringProp>
@@ -10956,7 +10956,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_03_ Test_Start_MaxPerf_FULL2_Stable">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_03_ Test_Start_MaxPerf_FULL2_Stable" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="90362557">
             <stringProp name="55">7</stringProp>
@@ -11053,7 +11053,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_04_Report_Create_MaxPerf_FULL2_Stable">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_04_Report_Create_MaxPerf_FULL2_Stable" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="90362557">
             <stringProp name="55">7</stringProp>
@@ -11163,7 +11163,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_05_Trend_Report_Create_MaxPerf3 Hard Code_FULL2_Stable">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_05_Trend_Report_Create_MaxPerf3 Hard Code_FULL2_Stable" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-1270499777">
             <stringProp name="1571">14</stringProp>
@@ -11204,7 +11204,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home">
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="home" enabled="true">
               <collectionProp name="ModuleController.node_path">
                 <stringProp name="764597751">Test Plan</stringProp>
                 <stringProp name="764597751">Test Plan</stringProp>
@@ -11213,11 +11213,11 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
             </ModuleController>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_04_TR_02_Login">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_04_TR_02_Login" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login">
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="login" enabled="true">
               <collectionProp name="ModuleController.node_path">
                 <stringProp name="764597751">Test Plan</stringProp>
                 <stringProp name="764597751">Test Plan</stringProp>
@@ -11226,11 +11226,11 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
             </ModuleController>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_05_TR_03_Trending_Open">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_05_TR_03_Trending_Open" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Trending Open">
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Trending Open" enabled="true">
               <collectionProp name="ModuleController.node_path">
                 <stringProp name="764597751">Test Plan</stringProp>
                 <stringProp name="764597751">Test Plan</stringProp>
@@ -11239,11 +11239,11 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
             </ModuleController>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_05_TR_04_Trending_Add">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC_05_TR_04_Trending_Add" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Trending Add">
+            <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Trending Add" enabled="true">
               <collectionProp name="ModuleController.node_path">
                 <stringProp name="764597751">Test Plan</stringProp>
                 <stringProp name="764597751">Test Plan</stringProp>
