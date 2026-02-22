@@ -5,8 +5,6 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
@@ -5609,7 +5607,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
       </hashTree>
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="________Trending Save Hard Code_________" enabled="false"/>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_05_TR_04_Trending_Save/test-srv/slaReportProfile-64">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UC_05_TR_04_Trending_Save/test-srv/slaReportProfile-64" enabled="true">
           <stringProp name="HTTPSampler.domain">dev-boomq.pflb.ru</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -8884,7 +8882,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_01_ Profile_registration_MaxPerf_FULL">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_01_ Profile_registration_MaxPerf_FULL" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="1872237351">
             <stringProp name="49">1</stringProp>
@@ -9096,7 +9094,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_02_Test Create_MaxPerf_FULL" enabled="true">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_02_Test Create_MaxPerf_FULL" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="1872237351">
             <stringProp name="49">1</stringProp>
@@ -9256,7 +9254,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_03_ Test_Start_MaxPerf_FULL" enabled="true">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_03_ Test_Start_MaxPerf_FULL" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="1872237351">
             <stringProp name="49">1</stringProp>
@@ -9416,7 +9414,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_04_Report_Create_MaxPerf_FULL" enabled="true">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_04_Report_Create_MaxPerf_FULL" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="1872237351">
             <stringProp name="49">1</stringProp>
@@ -9589,7 +9587,7 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_05_Trend_Report_Create_MaxPerf3 Hard Code_FULL" enabled="true">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_05_Trend_Report_Create_MaxPerf3 Hard Code_FULL" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-1670060330">
             <stringProp name="50">2</stringProp>
@@ -10710,12 +10708,12 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_01_ Profile_registration_Stable" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_01_ Profile_registration_Stable" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="1876035097">
-            <stringProp name="55">7</stringProp>
+          <collectionProp name="715571925">
+            <stringProp name="57">9</stringProp>
             <stringProp name="48">0</stringProp>
-            <stringProp name="50547">300</stringProp>
+            <stringProp name="1515111">1800</stringProp>
             <stringProp name="1688091">7200</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
@@ -10859,12 +10857,12 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_02_Test Create_MaxPerf_Stable" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_02_Test Create_MaxPerf_Stable" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="90362557">
-            <stringProp name="55">7</stringProp>
+          <collectionProp name="-1070100615">
+            <stringProp name="57">9</stringProp>
             <stringProp name="0">0</stringProp>
-            <stringProp name="50547">300</stringProp>
+            <stringProp name="1515111">1800</stringProp>
             <stringProp name="1688091">7200</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
@@ -10956,12 +10954,12 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_03_ Test_Start_MaxPerf_FULL2_Stable" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_03_ Test_Start_MaxPerf_FULL2_Stable" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="90362557">
-            <stringProp name="55">7</stringProp>
+          <collectionProp name="-1070100615">
+            <stringProp name="57">9</stringProp>
             <stringProp name="0">0</stringProp>
-            <stringProp name="50547">300</stringProp>
+            <stringProp name="1515111">1800</stringProp>
             <stringProp name="1688091">7200</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
@@ -11053,12 +11051,12 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_04_Report_Create_MaxPerf_FULL2_Stable" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_04_Report_Create_MaxPerf_FULL2_Stable" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="90362557">
-            <stringProp name="55">7</stringProp>
+          <collectionProp name="-1070100615">
+            <stringProp name="57">9</stringProp>
             <stringProp name="0">0</stringProp>
-            <stringProp name="50547">300</stringProp>
+            <stringProp name="1515111">1800</stringProp>
             <stringProp name="1688091">7200</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
@@ -11163,12 +11161,12 @@ vars.put(&quot;current_date&quot;, currentDate)</stringProp>
         </DebugSampler>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_05_Trend_Report_Create_MaxPerf3 Hard Code_FULL2_Stable" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC_05_Trend_Report_Create_MaxPerf3 Hard Code_FULL2_Stable" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-1270499777">
-            <stringProp name="1571">14</stringProp>
-            <stringProp name="0">0</stringProp>
-            <stringProp name="50547">300</stringProp>
+          <collectionProp name="-575102813">
+            <stringProp name="1575">18</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="1515111">1800</stringProp>
             <stringProp name="1688091">7200</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
